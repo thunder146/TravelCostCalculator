@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pfi.app.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#eee">
+        <TableRow
+            android:id="@+id/tableRowDistance"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp">
+            <TextView
+                android:id="@+id/TextViewDistance"
+                android:text="gefahrene km:"
+                android:layout_weight="1"
+                android:background="#abc"
+                android:textColor="#000000"
+                android:padding="8dip"
+                android:textSize="16sp"
+                android:gravity="left"/>
+            <EditText android:id="@+id/EditTextDistance"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="16sp"
+                android:hint="z.B.: 150" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowConsumption"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp">
+            <TextView
+                android:id="@+id/TextViewConsumption"
+                android:text="Verbrauch in Liter/100km:"
+                android:layout_weight="1"
+                android:background="#abc"
+                android:textColor="#000000"
+                android:padding="8dip"
+                android:textSize="16sp"
+                android:gravity="left"/>
+            <EditText android:id="@+id/EditTextConsumption"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="16sp"
+                android:hint="z.B.: 7.9" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowPrice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp">
+            <TextView
+                android:id="@+id/TextViewPrice"
+                android:text="Spritpreis in €:"
+                android:layout_weight="1"
+                android:background="#abc"
+                android:textColor="#000000"
+                android:padding="8dip"
+                android:textSize="16sp"
+                android:gravity="left"/>
+            <EditText android:id="@+id/EditTextPrice"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="16sp"
+                android:hint="z.B.: 1.56" />
+        </TableRow>
+        <TableRow
+        android:id="@+id/tableRowPeople"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp">
+        <TextView
+            android:id="@+id/TextViewPeople"
+            android:text="Personen/Teiler:"
+            android:layout_weight="1"
+            android:background="#abc"
+            android:textColor="#000000"
+            android:padding="8dip"
+            android:textSize="16sp"
+            android:gravity="left"/>
+        <EditText android:id="@+id/EditTextPeople"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:hint="z.B.: 2" />
+    </TableRow>
+        <TableRow
+            android:id="@+id/tableRowResult"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp">
+            <TextView
+                android:id="@+id/TextViewResult"
+                android:text="--- €"
+                android:layout_weight="1"
+                android:background="#abc"
+                android:textColor="#000000"
+                android:padding="12dip"
+                android:textSize="36sp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+</FrameLayout>
