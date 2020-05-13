@@ -5,16 +5,12 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import java.io.File;
 import java.io.IOException;
@@ -107,16 +103,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void RegisterOnEvents() {
-        // TextChanged EventHandler
         etDistance.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
@@ -127,12 +120,10 @@ public class MainActivity extends AppCompatActivity {
         etConsumption.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
@@ -143,12 +134,10 @@ public class MainActivity extends AppCompatActivity {
         etPrice.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
@@ -159,12 +148,10 @@ public class MainActivity extends AppCompatActivity {
         etPeople.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-
             }
 
             @Override
@@ -198,14 +185,13 @@ public class MainActivity extends AppCompatActivity {
             if (Validator.validateValues(distance, consumption, price, people)) {
                 double result = price * consumption / 100 * distance / people;
                 result = Math.round(result * 100.0) / 100.0;
-                tvResult.setText(String.valueOf(result) + " €");
+                tvResult.setText(result + " €");
 
                 setTextColor(tvResult, Color.rgb(0, 222, 85));
             } else {
                 setDefaults();
             }
         } catch (Exception ex) {
-            // TODO write log
             resetText();
         }
     }
@@ -249,7 +235,6 @@ public class MainActivity extends AppCompatActivity {
             TripData data = FileAccess.readTripDataFromFile(startUpDataFilePath);
 
             if (data != null) {
-                // Fill the textboxes
                 etDistance.setText(data.getDistance());
                 etConsumption.setText(data.getConsumption());
                 etPrice.setText(data.getPrice());
@@ -257,9 +242,5 @@ public class MainActivity extends AppCompatActivity {
                 // result will be calculated ...
             }
         }
-    }
-
-    private void ShowInfo() {
-        // TODO Show Info
     }
 }

@@ -16,15 +16,16 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_margin="2dp">
+
             <TextView
                 android:id="@+id/TextViewDistance"
-                android:text="gefahrene km:"
                 android:layout_weight="1"
                 android:background="#abc"
-                android:textColor="#000000"
+                android:gravity="left"
                 android:padding="8dip"
-                android:textSize="16sp"
-                android:gravity="left"/>
+                android:text="Driven km"
+                android:textColor="#000000"
+                android:textSize="16sp" />
             <EditText android:id="@+id/EditTextDistance"
                 android:layout_weight="5"
                 android:layout_width="0dp"
@@ -39,15 +40,16 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_margin="2dp">
+
             <TextView
                 android:id="@+id/TextViewConsumption"
-                android:text="Verbrauch in Liter/100km:"
                 android:layout_weight="1"
                 android:background="#abc"
-                android:textColor="#000000"
+                android:gravity="left"
                 android:padding="8dip"
-                android:textSize="16sp"
-                android:gravity="left"/>
+                android:text="Consumption liter/100km"
+                android:textColor="#000000"
+                android:textSize="16sp" />
             <EditText android:id="@+id/EditTextConsumption"
                 android:layout_weight="5"
                 android:layout_width="0dp"
@@ -62,15 +64,16 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_margin="2dp">
+
             <TextView
                 android:id="@+id/TextViewPrice"
-                android:text="Spritpreis in €:"
                 android:layout_weight="1"
                 android:background="#abc"
-                android:textColor="#000000"
+                android:gravity="left"
                 android:padding="8dip"
-                android:textSize="16sp"
-                android:gravity="left"/>
+                android:text="Fuel price in €"
+                android:textColor="#000000"
+                android:textSize="16sp" />
             <EditText android:id="@+id/EditTextPrice"
                 android:layout_weight="5"
                 android:layout_width="0dp"
@@ -85,15 +88,16 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_margin="2dp">
-        <TextView
-            android:id="@+id/TextViewPeople"
-            android:text="Personen/Teiler:"
-            android:layout_weight="1"
-            android:background="#abc"
-            android:textColor="#000000"
-            android:padding="8dip"
-            android:textSize="16sp"
-            android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/TextViewPeople"
+                android:layout_weight="1"
+                android:background="#abc"
+                android:gravity="left"
+                android:padding="8dip"
+                android:text="People/Divider"
+                android:textColor="#000000"
+                android:textSize="16sp" />
         <EditText android:id="@+id/EditTextPeople"
             android:layout_weight="5"
             android:layout_width="0dp"
