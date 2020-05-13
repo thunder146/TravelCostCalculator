@@ -26,14 +26,16 @@
                 android:text="Driven km"
                 android:textColor="#000000"
                 android:textSize="16sp" />
-            <EditText android:id="@+id/EditTextDistance"
-                android:layout_weight="5"
+
+            <EditText
+                android:id="@+id/EditTextDistance"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="5"
                 android:gravity="left"
+                android:hint="e.g. 150"
                 android:inputType="numberDecimal|numberSigned"
-                android:textSize="16sp"
-                android:hint="z.B.: 150" />
+                android:textSize="16sp" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRowConsumption"
@@ -50,14 +52,16 @@
                 android:text="Consumption liter/100km"
                 android:textColor="#000000"
                 android:textSize="16sp" />
-            <EditText android:id="@+id/EditTextConsumption"
-                android:layout_weight="5"
+
+            <EditText
+                android:id="@+id/EditTextConsumption"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="5"
                 android:gravity="left"
+                android:hint="e.g. 7.9"
                 android:inputType="numberDecimal|numberSigned"
-                android:textSize="16sp"
-                android:hint="z.B.: 7.9" />
+                android:textSize="16sp" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRowPrice"
@@ -74,14 +78,16 @@
                 android:text="Fuel price in €"
                 android:textColor="#000000"
                 android:textSize="16sp" />
-            <EditText android:id="@+id/EditTextPrice"
-                android:layout_weight="5"
+
+            <EditText
+                android:id="@+id/EditTextPrice"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="5"
                 android:gravity="left"
+                android:hint="e.g. 1.56"
                 android:inputType="numberDecimal|numberSigned"
-                android:textSize="16sp"
-                android:hint="z.B.: 1.56" />
+                android:textSize="16sp" />
         </TableRow>
         <TableRow
         android:id="@+id/tableRowPeople"
@@ -98,14 +104,16 @@
                 android:text="People/Divider"
                 android:textColor="#000000"
                 android:textSize="16sp" />
-        <EditText android:id="@+id/EditTextPeople"
-            android:layout_weight="5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:inputType="number"
-            android:textSize="16sp"
-            android:hint="z.B.: 2" />
+
+            <EditText
+                android:id="@+id/EditTextPeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:hint="e.g. 2"
+                android:inputType="number"
+                android:textSize="16sp" />
     </TableRow>
         <TableRow
             android:id="@+id/tableRowResult"
